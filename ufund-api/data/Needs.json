@@ -1,0 +1,436 @@
+[
+    {
+        "id": 1,
+        "type": "Bottled Water",
+        "cost": 1.0,
+        "quantity": 197,
+        "category": "BEVERAGES"
+    },
+    {
+        "id": 2,
+        "type": "Shelf-Stable Milk",
+        "cost": 2.5,
+        "quantity": 189,
+        "category": "BEVERAGES"
+    },
+    {
+        "id": 3,
+        "type": "Juice Boxes",
+        "cost": 0.75,
+        "quantity": 85,
+        "category": "BEVERAGES"
+    },
+    {
+        "id": 4,
+        "type": "Tea Bags",
+        "cost": 1.5,
+        "quantity": 149,
+        "category": "BEVERAGES"
+    },
+    {
+        "id": 5,
+        "type": "Sports Drinks",
+        "cost": 1.25,
+        "quantity": 180,
+        "category": "BEVERAGES"
+    },
+    {
+        "id": 6,
+        "type": "Coconut Water",
+        "cost": 2.0,
+        "quantity": 100,
+        "category": "BEVERAGES"
+    },
+    {
+        "id": 9,
+        "type": "Coffee",
+        "cost": 2.5,
+        "quantity": 78,
+        "category": "BEVERAGES"
+    },
+    {
+        "id": 10,
+        "type": "Flavored Water",
+        "cost": 1.5,
+        "quantity": 180,
+        "category": "BEVERAGES"
+    },
+    {
+        "id": 12,
+        "type": "Energy Drinks",
+        "cost": 2.5,
+        "quantity": 130,
+        "category": "BEVERAGES"
+    },
+    {
+        "id": 13,
+        "type": "Almond Milk",
+        "cost": 3.0,
+        "quantity": 100,
+        "category": "BEVERAGES"
+    },
+    {
+        "id": 14,
+        "type": "Fruit Punch",
+        "cost": 1.8,
+        "quantity": 200,
+        "category": "BEVERAGES"
+    },
+    {
+        "id": 15,
+        "type": "Sparkling Water",
+        "cost": 1.4,
+        "quantity": 150,
+        "category": "BEVERAGES"
+    },
+    {
+        "id": 16,
+        "type": "Apples",
+        "cost": 0.5,
+        "quantity": 200,
+        "category": "PRODUCE"
+    },
+    {
+        "id": 17,
+        "type": "Oranges",
+        "cost": 0.6,
+        "quantity": 150,
+        "category": "PRODUCE"
+    },
+    {
+        "id": 18,
+        "type": "Potatoes",
+        "cost": 0.3,
+        "quantity": 300,
+        "category": "PRODUCE"
+    },
+    {
+        "id": 19,
+        "type": "Carrots",
+        "cost": 0.2,
+        "quantity": 244,
+        "category": "PRODUCE"
+    },
+    {
+        "id": 20,
+        "type": "Onions",
+        "cost": 0.4,
+        "quantity": 180,
+        "category": "PRODUCE"
+    },
+    {
+        "id": 21,
+        "type": "Bananas",
+        "cost": 0.4,
+        "quantity": 220,
+        "category": "PRODUCE"
+    },
+    {
+        "id": 22,
+        "type": "Tomatoes",
+        "cost": 0.7,
+        "quantity": 180,
+        "category": "PRODUCE"
+    },
+    {
+        "id": 23,
+        "type": "Cucumbers",
+        "cost": 0.5,
+        "quantity": 160,
+        "category": "PRODUCE"
+    },
+    {
+        "id": 24,
+        "type": "Lettuce",
+        "cost": 1.0,
+        "quantity": 140,
+        "category": "PRODUCE"
+    },
+    {
+        "id": 25,
+        "type": "Bell Peppers",
+        "cost": 0.8,
+        "quantity": 130,
+        "category": "PRODUCE"
+    },
+    {
+        "id": 26,
+        "type": "Garlic",
+        "cost": 0.6,
+        "quantity": 150,
+        "category": "PRODUCE"
+    },
+    {
+        "id": 27,
+        "type": "Lemons",
+        "cost": 0.5,
+        "quantity": 120,
+        "category": "PRODUCE"
+    },
+    {
+        "id": 28,
+        "type": "Grapes",
+        "cost": 1.2,
+        "quantity": 79,
+        "category": "PRODUCE"
+    },
+    {
+        "id": 29,
+        "type": "Sweet Potatoes",
+        "cost": 0.7,
+        "quantity": 200,
+        "category": "PRODUCE"
+    },
+    {
+        "id": 30,
+        "type": "Cabbage",
+        "cost": 0.8,
+        "quantity": 180,
+        "category": "PRODUCE"
+    },
+    {
+        "id": 31,
+        "type": "Bread",
+        "cost": 1.5,
+        "quantity": 120,
+        "category": "SEMI_PERISHABLES"
+    },
+    {
+        "id": 32,
+        "type": "Tortillas",
+        "cost": 1.0,
+        "quantity": 100,
+        "category": "SEMI_PERISHABLES"
+    },
+    {
+        "id": 33,
+        "type": "Bagels",
+        "cost": 2.0,
+        "quantity": 80,
+        "category": "SEMI_PERISHABLES"
+    },
+    {
+        "id": 34,
+        "type": "Cheese",
+        "cost": 3.0,
+        "quantity": 60,
+        "category": "SEMI_PERISHABLES"
+    },
+    {
+        "id": 35,
+        "type": "Nut Butters",
+        "cost": 2.5,
+        "quantity": 100,
+        "category": "SEMI_PERISHABLES"
+    },
+    {
+        "id": 36,
+        "type": "Pita Bread",
+        "cost": 1.0,
+        "quantity": 150,
+        "category": "SEMI_PERISHABLES"
+    },
+    {
+        "id": 37,
+        "type": "Canned Biscuits",
+        "cost": 2.0,
+        "quantity": 120,
+        "category": "SEMI_PERISHABLES"
+    },
+    {
+        "id": 38,
+        "type": "Granola Bars",
+        "cost": 1.5,
+        "quantity": 100,
+        "category": "SEMI_PERISHABLES"
+    },
+    {
+        "id": 39,
+        "type": "Crackers",
+        "cost": 1.0,
+        "quantity": 180,
+        "category": "SEMI_PERISHABLES"
+    },
+    {
+        "id": 40,
+        "type": "Canned Chili",
+        "cost": 2.5,
+        "quantity": 75,
+        "category": "SEMI_PERISHABLES"
+    },
+    {
+        "id": 41,
+        "type": "Fresh Meat",
+        "cost": 5.0,
+        "quantity": 50,
+        "category": "PERISHABLES"
+    },
+    {
+        "id": 42,
+        "type": "Frozen Vegetables",
+        "cost": 1.25,
+        "quantity": 200,
+        "category": "PERISHABLES"
+    },
+    {
+        "id": 43,
+        "type": "Fresh Milk",
+        "cost": 1.5,
+        "quantity": 180,
+        "category": "PERISHABLES"
+    },
+    {
+        "id": 44,
+        "type": "Ground Meat",
+        "cost": 4.5,
+        "quantity": 80,
+        "category": "PERISHABLES"
+    },
+    {
+        "id": 46,
+        "type": "Chicken Breasts",
+        "cost": 6.0,
+        "quantity": 40,
+        "category": "PERISHABLES"
+    },
+    {
+        "id": 47,
+        "type": "Pork Chops",
+        "cost": 5.5,
+        "quantity": 30,
+        "category": "PERISHABLES"
+    },
+    {
+        "id": 48,
+        "type": "Salmon",
+        "cost": 7.0,
+        "quantity": 19,
+        "category": "PERISHABLES"
+    },
+    {
+        "id": 49,
+        "type": "Eggs",
+        "cost": 2.5,
+        "quantity": 100,
+        "category": "PERISHABLES"
+    },
+    {
+        "id": 50,
+        "type": "Yogurt",
+        "cost": 1.75,
+        "quantity": 150,
+        "category": "PERISHABLES"
+    },
+    {
+        "id": 51,
+        "type": "Canned Soup",
+        "cost": 1.2,
+        "quantity": 300,
+        "category": "NON_PERISHABLES"
+    },
+    {
+        "id": 52,
+        "type": "Canned Vegetables",
+        "cost": 1.0,
+        "quantity": 250,
+        "category": "NON_PERISHABLES"
+    },
+    {
+        "id": 53,
+        "type": "Canned Fruit",
+        "cost": 1.1,
+        "quantity": 200,
+        "category": "NON_PERISHABLES"
+    },
+    {
+        "id": 54,
+        "type": "Pasta",
+        "cost": 0.9,
+        "quantity": 350,
+        "category": "NON_PERISHABLES"
+    },
+    {
+        "id": 55,
+        "type": "Rice",
+        "cost": 1.0,
+        "quantity": 300,
+        "category": "NON_PERISHABLES"
+    },
+    {
+        "id": 56,
+        "type": "Canned Beans",
+        "cost": 1.0,
+        "quantity": 250,
+        "category": "NON_PERISHABLES"
+    },
+    {
+        "id": 57,
+        "type": "Canned Tuna",
+        "cost": 1.5,
+        "quantity": 180,
+        "category": "NON_PERISHABLES"
+    },
+    {
+        "id": 58,
+        "type": "Peanut Butter",
+        "cost": 2.5,
+        "quantity": 150,
+        "category": "NON_PERISHABLES"
+    },
+    {
+        "id": 59,
+        "type": "Instant Oatmeal",
+        "cost": 3.0,
+        "quantity": 120,
+        "category": "NON_PERISHABLES"
+    },
+    {
+        "id": 60,
+        "type": "Ramen Noodles",
+        "cost": 0.8,
+        "quantity": 400,
+        "category": "NON_PERISHABLES"
+    },
+    {
+        "id": 61,
+        "type": "Cereal",
+        "cost": 2.0,
+        "quantity": 250,
+        "category": "NON_PERISHABLES"
+    },
+    {
+        "id": 62,
+        "type": "Canned Spaghetti",
+        "cost": 1.25,
+        "quantity": 200,
+        "category": "NON_PERISHABLES"
+    },
+    {
+        "id": 63,
+        "type": "Muesli",
+        "cost": 2.75,
+        "quantity": 150,
+        "category": "NON_PERISHABLES"
+    },
+    {
+        "id": 64,
+        "type": "Dried Fruits",
+        "cost": 3.5,
+        "quantity": 100,
+        "category": "NON_PERISHABLES"
+    },
+    {
+        "id": 65,
+        "type": "Instant Soup",
+        "cost": 1.5,
+        "quantity": 180,
+        "category": "NON_PERISHABLES"
+    },
+    {
+        "id": 66,
+        "type": "Squirt",
+        "cost": 3.5,
+        "quantity": 23,
+        "category": "BEVERAGES"
+    }
+]
