@@ -1,0 +1,93 @@
+/* NeedsComponent's private CSS styles */
+.needs {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: .5rem;
+  margin: 1rem 0;
+  box-sizing: border-box;
+}
+
+.needs li {
+  position: relative;
+  cursor: pointer;
+  padding: 0 .75em 0;
+}
+
+.needs li:hover {
+  left: .1em;
+}
+
+.need-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .75em;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.2em;
+}
+
+.need-item h2 {
+  margin: 0;
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+}
+
+.needs a {
+  color: #333;
+  text-decoration: none;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+}
+
+.needs a:hover {
+  color: #2c3a41;
+  background-color: #e6e6e6;
+}
+
+.needs a:active {
+  background-color: #525252;
+  color: #fafafa;
+}
+
+.quantity-input {
+  width: 65px;
+  /* Makes the input bar thinner */
+  font-size: .75em;
+  /* Increases the font size */
+  text-align: center;
+  /* Centers the numbers in the input field */
+  padding: 15px;
+  margin-left: 10px;
+}
+
+.subtotal {
+  font-size: 1.3em;
+  text-align: right;
+}
+
+.delete {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.delete:hover {
+  color: darkred;
+}

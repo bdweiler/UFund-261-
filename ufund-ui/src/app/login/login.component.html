@@ -1,0 +1,23 @@
+<div id="login-box">
+    <p class="login-message">Sign In</p>
+    <p class="sub-message">Be a lifeline in times of crisis. Help communities rebuild after disaster.</p>
+
+    <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+    <div id="user-input">
+        <label for="name" class="username-label">Username</label>
+        <input id="name" #name />
+    </div>
+
+    <!-- (click) passes input value to add() and then clears the input -->
+    <button type="button" class="login-button" (click)="login(name.value); name.value=''">
+        Login
+    </button>
+
+    <div class="divider">or</div>
+
+    <button type="button" class="create-account-button" (click)="createUser(name.value); name.value=''">
+        Create Account
+    </button>
+
+</div>

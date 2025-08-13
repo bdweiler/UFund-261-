@@ -1,0 +1,28 @@
+<div class="leaderboard-container">
+    <div class="button-group">
+        <button type="button" class="action-button" (click)="needPage()">Needs</button>
+        <button type="button" class="action-button" (click)="basket()">Basket</button>
+        <button type="button" class="action-button" (click)="signOut()">Sign Out</button>
+        <button type="button" class="action-button active" (click)="leaderboard()">Leaderboard</button>
+    </div>
+
+    <div class="leaderboard">
+        <h2>Top Spenders</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Amount Spent</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of topSpenders; let i = index">
+                    <td>{{ i + 1 }}</td>
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.spent | currency }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

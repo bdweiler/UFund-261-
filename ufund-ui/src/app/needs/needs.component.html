@@ -1,0 +1,89 @@
+<h2>The Cupboard</h2>
+<!-- <h3>Current User: {{currentUser.username}}</h3> -->
+<div *ngIf="currentUser.username === 'admin'">
+  <button type="button" class="add-button" (click)="signOut();">
+    Sign Out
+  </button>
+  <div>
+    <label for="new-need">Need type: </label>
+    <input id="new-need" #needType />
+
+    <label for="need-cost">Cost: </label>
+    <input id="need-cost" #needCost />
+
+    <label for="need-quantity">Quantity: </label>
+    <input id="need-quantity" #needQuantity />
+
+    <label for="need-category">Category: </label>
+    <select id="need-category" #needCategory>
+      <option *ngFor="let category of categoryKeys()" [value]="category">{{category}}</option>
+    </select>
+
+    <!-- (click) passes input value to add() and then clears the input -->
+    <button type="button" class="add-button"
+      (click)="add(needType.value, needCost.value, needQuantity.value, needCategory.value); needType.value=''; needCost.value=''; needQuantity.value=''; needCategory.value='';">
+      Add need
+    </button>
+  </div>
+  <app-need-search></app-need-search>
+  <ul class="needs">
+    <li *ngFor="let need of needs">
+      <a routerLink="/detail/{{need.id}}">
+        <span class="badge">{{need.id}}</span> {{need.type}}
+      </a>
+      <button type="button" class="delete" title="delete need" (click)="delete(need)">x</button>
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="currentUser.username !== 'admin'" class="selection-container">
+  <app-need-search></app-need-search>
+
+  <button type="button" class="filter-button" [ngClass]="{ 'filter-button-expanded': sidebarVisible }"
+    (click)="filterSidebar()">
+    Filter
+  </button>
+
+  <div class="button-container">
+    <input type="image" src="assets/add-to-cart-icon.png" id="cartButton"
+      (click)="basketExpandableComponent.toggleWindowVisibility()">
+  </div>
+
+  <app-basket-expandable></app-basket-expandable>
+
+  <app-sidebar-filter *ngIf="sidebarVisible" [isVisible]="sidebarVisible"
+    (categoryFilterChange)="updateCategoryFilter($event.category, $event.isChecked)"
+    (filtersCleared)="clearAllFilters()" (costSortChange)="updateCostSort($event)">
+  </app-sidebar-filter>
+
+  <button id="leaderboard" type="button" class="leader-button" (click)="leaderboard();">
+    Leaderboard
+  </button>
+
+  <button type="button" class="sign-out-button" (click)="signOut();">
+    ({{currentUser.username}}) Sign Out
+  </button>
+
+
+  <div id="needs-container">
+    <ul class="needs">
+      <div *ngFor="let need of needs" class="tile">
+
+        <img [src]="getImagePath(need.type)" alt="{{ need.type }}" class="need-image" />
+        <p class="default">{{need.type}}</p>
+        <p class="number">${{need.cost}}</p>
+        <p class="default">Stock: {{need.quantity}}</p>
+
+
+        <div class="quantity-adjuster">
+          <button (click)="decreaseQuantity(need.id)">-</button>
+          <span>{{ selectedQuantity[need.id] || 1 }}</span>
+          <button (click)="increaseQuantity(need.id)">+</button>
+        </div>
+        <button class="overlay-button" (click)="addAmountToBasket(need, selectedQuantity[need.id] || 1)">
+          Add to Basket
+        </button>
+
+      </div>
+    </ul>
+  </div>

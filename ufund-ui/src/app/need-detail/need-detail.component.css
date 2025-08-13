@@ -1,0 +1,75 @@
+/* Container styling */
+div[ngIf] {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.info {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 20px auto;
+}
+
+label {
+  padding-top: 30px;
+}
+
+/* Image styling */
+.need-image {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+/* Button styling */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:last-child {
+  background-color: #28a745;
+}
+
+button:last-child:hover {
+  background-color: #218838;
+}

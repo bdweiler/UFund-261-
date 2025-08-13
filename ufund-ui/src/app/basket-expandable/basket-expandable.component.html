@@ -1,0 +1,13 @@
+<div class="expandable-container" *ngIf="windowVisible">
+  <h2>Basket</h2>
+  <div id="basket-items-container">
+    <div class="basket-items">
+      <p *ngFor="let need of userNeeds" id="basketItem">
+        {{ need.type }}: {{ need.quantity }}
+      </p>
+    </div>
+  </div>
+  <button type="button" id="checkout-button" (click)="basketPage()">
+    Checkout
+  </button>
+</div>

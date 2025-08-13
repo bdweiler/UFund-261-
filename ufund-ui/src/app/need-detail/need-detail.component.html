@@ -1,0 +1,35 @@
+<div *ngIf="currentUser.username === 'admin'">
+  <div *ngIf="need">
+    <h2>{{need.type | uppercase}} Details</h2>
+    <div><span>id: </span>{{need.id}}</div>
+    <div>
+      <label for="need-type">type: </label>
+      <input id="need-type" [(ngModel)]="need.type" placeholder="Needs type" />
+      <label for="need-type">cost: </label>
+      <input id="need-type" [(ngModel)]="need.cost" placeholder="Needs cost" />
+      <label for="need-type">quantity: </label>
+      <input id="need-type" [(ngModel)]="need.quantity" placeholder="Needs quantity" />
+      <label for="need-category">category: </label>
+      <input id="need-category" [(ngModel)]="need.category" placeholder="Needs category" />
+    </div>
+    <button type="button" (click)="goBack()">go back</button>
+    <button type="button" (click)="save()">save</button>
+  </div>
+</div>
+
+<div *ngIf="currentUser.username !== 'admin'">
+  <div *ngIf="need">
+    <img [src]="getImagePath(need.type)" alt="{{ need.type }}" class="need-image" />
+    <h2>{{need.type | uppercase}} Details</h2>
+    <li class="info">
+      <p>Name: {{need.type}}</p>
+      <p>Cost: {{need.cost}}</p>
+      <p>Quantity: {{need.quantity}}</p>
+      <p>Category: {{need.category}}</p>
+    </li>
+    <div class="buttons">
+      <button type="button" (click)="goBack()">go back</button>
+      <button type="button" (click)="addBasket()">add to basket</button>
+    </div>
+  </div>
+</div>

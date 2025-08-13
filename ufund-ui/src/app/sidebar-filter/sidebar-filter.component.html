@@ -1,0 +1,55 @@
+<div class="sidebar" [class.active]="isVisible">
+    <div class="checkbox-container">
+        <h4>Categories</h4>
+        <div class="checkbox-item">
+            <input type="checkbox" id="perishable" (change)="onCheckboxChange($event, 'PERISHABLES')" />
+            <label for="perishable">Perishable</label>
+        </div>
+
+        <div class="checkbox-item">
+            <input type="checkbox" id="semi-perishable" (change)="onCheckboxChange($event, 'SEMI_PERISHABLES')" />
+            <label for="semi-perishable">Semi-Perishable</label>
+        </div>
+
+        <div class="checkbox-item">
+            <input type="checkbox" id="non-perishable" (change)="onCheckboxChange($event, 'NON_PERISHABLES')" />
+            <label for="non-perishable">Non-Perishable</label>
+        </div>
+
+        <div class="checkbox-item">
+            <input type="checkbox" id="produce" (change)="onCheckboxChange($event, 'PRODUCE')" />
+            <label for="produce">Produce</label>
+        </div>
+
+        <div class="checkbox-item">
+            <input type="checkbox" id="beverage" (change)="onCheckboxChange($event, 'BEVERAGES')" />
+            <label for="beverage">Beverage</label>
+        </div>
+    </div>
+
+    <div class="radio-container">
+        <h4>Cost</h4>
+        <div class="radio-item">
+            <input type="radio" id="increasing" name="cost" (change)="onSortChange('high-lowC')" />
+            <label for="increasing">High-Low</label>
+        </div>
+        <div class="radio-item">
+            <input type="radio" id="decreasing" name="cost" (change)="onSortChange('low-highC')" />
+            <label for="decreasing">Low-High</label>
+        </div>
+    </div>
+
+    <div class="radio-container">
+        <h4>Quantity</h4>
+        <div class="radio-item">
+            <input type="radio" id="increasing" name="quantity" (change)="onSortChange('high-lowQ')" />
+            <label for="increasing">High-Low</label>
+        </div>
+        <div class="radio-item">
+            <input type="radio" id="decreasing" name="quantity" (change)="onSortChange('low-highQ')" />
+            <label for="decreasing">Low-High</label>
+        </div>
+    </div>
+
+    <button class="clear-button" (click)="clearFilters()">Clear Filter</button>
+</div>

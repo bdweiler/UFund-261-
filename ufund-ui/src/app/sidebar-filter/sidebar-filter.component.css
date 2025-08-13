@@ -1,0 +1,67 @@
+.sidebar {
+    position: fixed;
+    width: 230px;
+    height: 100%;
+    top: 0;
+    background-color: #f4f4f4;
+    padding: 20px;
+    vertical-align: middle;
+    text-align: left;
+  }
+  
+  .sidebar.active {
+  position: fixed;
+  width: 230px;
+  height: 100%;
+  top: 0;
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: left;
+}
+
+.sidebar.active {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  height: auto;
+  z-index: 1;
+  border: 1px solid #ccc;
+  margin: 20px;
+  z-index: 1000;
+}
+
+.checkbox-container,
+.radio-container {
+  margin-bottom: 20px;
+}
+
+.checkbox-item,
+.radio-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkbox-item label,
+.radio-item label {
+  margin-left: 5px;
+}
+
+.clear-button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #ddd;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.clear-button:hover {
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,95 @@
+#login-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 200px;
+}
+
+.login-message {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.sub-message {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 20px;
+    text-align: center;
+    width:75%;
+}
+
+.username-label {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+#user-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#name {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    color: white;
+}
+
+
+button.login-button {
+    background-color: #0073b1;
+}
+
+button.login-button:hover {
+    background-color: #005582;
+    /* Darker blue for hover effect */
+}
+
+button.create-account-button {
+    color: #0073b1;
+}
+
+button.create-account-button:hover {
+    background-color: #ccc;
+}
+
+.divider {
+    margin: 10px;
+}
+
+.error-message {
+    color: red;
+    font-size: 1em;
+    margin-bottom: 15px;
+    text-align: center;
+}

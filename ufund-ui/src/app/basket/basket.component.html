@@ -1,0 +1,31 @@
+<h2>{{currentUser.username}}'s Basket</h2>
+<button type="button" class="add-button" (click)="needPage();">
+  Needs
+</button>
+<button type="button" class="add-button" (click)="signOut();">
+  Sign Out
+</button>
+<button type="button" class="add-button" (click)="leaderboard();">
+  Leaderboard
+</button>
+
+<ul class="needs">
+  <li *ngFor="let need of userNeeds">
+    <div class="need-item">
+      <h2>
+        <span class="badge"></span> {{need.type}} ${{need.cost.toFixed(2)}}
+        <input type="number" [(ngModel)]="need.quantity" (change)="updateQuantity(need)"
+          (input)="validateQuantity(need)" min="1" class="quantity-input">
+      </h2>
+      <button type="button" class="delete" title="delete need" (click)="delete(need)">x</button>
+    </div>
+  </li>
+</ul>
+
+<div class="subtotal">
+  <p>Total Cost: ${{ totalCost.toFixed(2) }}</p>
+</div>
+
+<button type="button" class="add-button" (click)="checkOut();">
+  Check Out
+</button> 
