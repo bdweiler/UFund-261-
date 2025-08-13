@@ -5,12 +5,13 @@ import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 
 import { Need } from './need';
+import { environment } from '../environments/environment';
 
 
 @Injectable({ providedIn: 'root' })
 export class NeedService {
 
-  private needsUrl = 'http://localhost:8080/needs';  
+  private needsUrl = `${environment.apiUrl}/needs`; // URL to web api
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })

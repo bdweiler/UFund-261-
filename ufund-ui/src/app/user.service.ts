@@ -5,12 +5,13 @@ import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 
 import { User } from './user';
+import { environment } from '../environments/environment';
 
 
 @Injectable({ providedIn: 'root' })
 export class UserService {
 
-  private usersUrl = 'http://localhost:8080/users';
+  private usersUrl = `${environment.apiUrl}/users`;
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
