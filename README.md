@@ -1,74 +1,68 @@
-# U-Fund:  UFundFood: Produce Relief for the Homeless and Those affected by severe weather in Tallahasse, FL.
-# Modify this document to expand any and all sections that are applicable for a better understanding from your users/testers/collaborators (remove this comment and other instructions areas for your FINAL release)
+# U-Fund — Produce Relief for the Homeless & Weather-Affected in Tallahassee, FL
 
-An online U-Fund system built in Java 17=> and ___ _replace with other platform requirements_ ___
-  
+A full-stack web app that helps coordinate and fund essential produce and supplies for people experiencing homelessness and those impacted by severe weather in Tallahassee, Florida.
+
+- **Live site:** https://bdweiler.github.io/UFund-261-/
+
+---
+
 ## Team
 
-- Brock Weiler
-- Daniel Catorcini
-- Alec Vuillermoz
+- Brock Weiler  
+- Daniel Catorcini  
+- Alec Vuillermoz  
 - Matt Spring
 
+---
 
-## Prerequisites
+## What It Does
 
-- Java 11=>17 (Make sure to have correct JAVA_HOME setup in your environment)
-- Maven
--  _add any other tech stack requirements_
+- Browse a catalog of community **needs** (produce & essentials)  
+- Add items to a **basket** and adjust quantities  
+- **Checkout** to allocate funds/items and decrement inventory  
+- View the **leaderboard** of top contributors
 
+---
 
-## How to run it
+## Tech Stack
 
-1. Clone the repository and go to the root directory.
-2. Execute `mvn compile exec:java`
-3. Open in your browser `http://localhost:8080/`
-4.  _add any other steps required or examples of how to use/run_
+**Frontend**
+- Angular (TypeScript SPA)
+- Hosted on **GitHub Pages**
 
-## Known bugs and disclaimers
-(It may be the case that your implementation is not perfect.)
+**Backend**
+- Java **17**, Spring Boot (REST API)
+- Maven build
+- Hosted on **Railway**
 
-Document any known bug or nuisance.
-If any shortcomings, make clear what these are and where they are located.
+---
 
-## How to test it
+## How to Use (Testers & Demo)
 
-The Maven build script provides hooks for run unit tests and generate code coverage
-reports in HTML.
+1. Open the live site and **log in** (use your test/demo credentials).  
+2. Visit **Needs** to browse items; add selected items to your **Basket**.  
+3. Adjust quantities in **Basket** and **Checkout** when ready.  
+4. Open **Leaderboard** to see aggregate contributions.
 
-To run tests on all tiers together do this:
+> If data fails to load, ensure the API is reachable at https://ufund-261-production.up.railway.app/needs 
 
-1. Execute `mvn clean test jacoco:report`
-2. Open in your browser the file at `PROJECT_API_HOME/target/site/jacoco/index.html`
+---
 
-To run tests on a single tier do this:
+## API Overview
 
-1. Execute `mvn clean test-compile surefire:test@tier jacoco:report@tier` where `tier` is one of `controller`, `model`, `persistence`
-2. Open in your browser the file at `PROJECT_API_HOME/target/site/jacoco/{controller, model, persistence}/index.html`
+> High-level summary of endpoints used by the UI. Check controller annotations for the authoritative list.
 
-To run tests on all the tiers in isolation do this:
+### Needs
+- `GET /needs` — list all needs  
+- `GET /needs/{id}` — fetch a specific need  
+- `POST /needs` — create a need  
+- `PUT /needs/{id}` — update a need  
+- `DELETE /needs/{id}` — delete a need  
 
-1. Execute `mvn exec:exec@tests-and-coverage`
-2. To view the Controller tier tests open in your browser the file at `PROJECT_API_HOME/target/site/jacoco/model/index.html`
-3. To view the Model tier tests open in your browser the file at `PROJECT_API_HOME/target/site/jacoco/model/index.html`
-4. To view the Persistence tier tests open in your browser the file at `PROJECT_API_HOME/target/site/jacoco/model/index.html`
-
-*(Consider using `mvn clean verify` to attest you have reached the target threshold for coverage)
-  
-  
-## How to generate the Design documentation PDF
-
-1. Access the `PROJECT_DOCS_HOME/` directory
-2. Execute `mvn exec:exec@docs`
-3. The generated PDF will be in `PROJECT_DOCS_HOME/` directory
-
-
-## How to setup/run/test program 
-1. Tester, first obtain the Acceptance Test plan
-2. IP address of target machine running the app
-3. Execute ________
-4. ...
-5. ...
+### Users *(example; align with actual mappings)*
+- `GET /users?username={username}` — search by username  
+- `PUT /users/{id}` — update user (e.g., basket contents, totals)
+---
 
 ## License
 
